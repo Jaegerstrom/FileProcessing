@@ -1,0 +1,16 @@
+﻿Imports System.IO
+
+Public Class Form1
+
+    Private Sub ButtonWrite_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim filePath As String = "sample.txt"
+
+        Using writer As New StreamWriter(filePath)
+            writer.WriteLine("Hello, this is a test file!")
+            writer.WriteLine("Second line of text.")
+        End Using
+
+        Console.WriteLine("Data written successfully.")
+    End Sub
+
+End Class

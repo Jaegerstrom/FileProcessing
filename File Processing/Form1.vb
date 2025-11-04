@@ -10,7 +10,7 @@ Public Class Form1
             writer.WriteLine("Second line of text.")
         End Using
 
-        Console.WriteLine("Data written successfully.")
+        MessageBox.Show("Data written successfully.", "Success")
     End Sub
 
 End Class

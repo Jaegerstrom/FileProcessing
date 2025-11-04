@@ -20,4 +20,12 @@ Public Class Form1
 
     End Sub
 
+    Private Sub ButtonRead_Click(sender As Object, e As EventArgs) Handles ButtonRead.Click
+        Dim filePath As String = "sample.txt"
+
+        Using reader As New StreamReader(filePath)
+            Dim content As String = reader.ReadToEnd()
+            MessageBox.Show(content, "File Content: ")
+        End Using
+    End Sub
 End Class

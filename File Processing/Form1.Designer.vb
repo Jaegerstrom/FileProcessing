@@ -22,24 +22,25 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ButtonWrite = New System.Windows.Forms.Button()
         Me.ButtonRead = New System.Windows.Forms.Button()
         Me.ButtonReadPerLine = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.ButtonOpenFile = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'ButtonWrite
         '
-        Me.Button1.Location = New System.Drawing.Point(148, 189)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(190, 82)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Write"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonWrite.Location = New System.Drawing.Point(198, 181)
+        Me.ButtonWrite.Name = "ButtonWrite"
+        Me.ButtonWrite.Size = New System.Drawing.Size(190, 82)
+        Me.ButtonWrite.TabIndex = 0
+        Me.ButtonWrite.Text = "Write"
+        Me.ButtonWrite.UseVisualStyleBackColor = True
         '
         'ButtonRead
         '
-        Me.ButtonRead.Location = New System.Drawing.Point(148, 89)
+        Me.ButtonRead.Location = New System.Drawing.Point(198, 93)
         Me.ButtonRead.Name = "ButtonRead"
         Me.ButtonRead.Size = New System.Drawing.Size(190, 82)
         Me.ButtonRead.TabIndex = 1
@@ -48,9 +49,9 @@ Partial Class Form1
         '
         'ButtonReadPerLine
         '
-        Me.ButtonReadPerLine.Location = New System.Drawing.Point(274, 324)
+        Me.ButtonReadPerLine.Location = New System.Drawing.Point(394, 272)
         Me.ButtonReadPerLine.Name = "ButtonReadPerLine"
-        Me.ButtonReadPerLine.Size = New System.Drawing.Size(190, 82)
+        Me.ButtonReadPerLine.Size = New System.Drawing.Size(190, 79)
         Me.ButtonReadPerLine.TabIndex = 2
         Me.ButtonReadPerLine.Text = "Read Per Line"
         Me.ButtonReadPerLine.UseVisualStyleBackColor = True
@@ -58,28 +59,39 @@ Partial Class Form1
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(148, 311)
+        Me.ListBox1.Location = New System.Drawing.Point(394, 93)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(120, 95)
+        Me.ListBox1.Size = New System.Drawing.Size(190, 173)
         Me.ListBox1.TabIndex = 3
+        '
+        'ButtonOpenFile
+        '
+        Me.ButtonOpenFile.Location = New System.Drawing.Point(198, 269)
+        Me.ButtonOpenFile.Name = "ButtonOpenFile"
+        Me.ButtonOpenFile.Size = New System.Drawing.Size(190, 82)
+        Me.ButtonOpenFile.TabIndex = 4
+        Me.ButtonOpenFile.Text = "Open File"
+        Me.ButtonOpenFile.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ButtonOpenFile)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.ButtonReadPerLine)
         Me.Controls.Add(Me.ButtonRead)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ButtonWrite)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ButtonWrite As Button
     Friend WithEvents ButtonRead As Button
     Friend WithEvents ButtonReadPerLine As Button
     Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents ButtonOpenFile As Button
 End Class
